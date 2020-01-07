@@ -21,8 +21,8 @@ Please use the menus to the left to guide you through all the workshop set-up in
  
 <ul class="fa-ul">
     <li><i class="fa-li fas fa-question-circle"></i><a href="https://community.rstudio.com/" target="_blank">Get help before the workshop</a></li>
-    <li><i class="fa-li fas fa-bug"></i><a href="https://github.com/rstudio-conf-2020/my-org-first-pkg/issues" target="_blank">Report issues</a></li>
-    <li><i class="fa-li fas fa-edit"></i><a href="https://github.com/rstudio-conf-2020/my-org-first-pkg/tree/master/docs" target="_blank">Suggest an edit</a></li>
+    <li><i class="fa-li fas fa-bug"></i><a href="https://github.com/malcolmbarrett/my-org-first-pkg-2020/issues" target="_blank">Report issues</a></li>
+    <li><i class="fa-li fas fa-edit"></i><a href="https://github.com/malcolmbarrett/my-org-first-pkg-2020/tree/master/docs" target="_blank">Suggest an edit</a></li>
 </ul>
 
 We look forward to meeting and working with you all!

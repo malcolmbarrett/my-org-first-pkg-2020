@@ -73,7 +73,7 @@ privacy_pack = false
 
 # Enable visitors to edit pages?
 #   `repo` defines the repository URL. `editable` defines which page types can be edited.
-edit_page = {repo_url = "https://github.com/rstudio-conf-2020/my-org-first-pkg/edit/master/content", content_dir = "", repo_branch = "master", editable = {docs = true, page = true, post = false}}
+edit_page = {repo_url = "https://github.com/malcolmbarrett/my-org-first-pkg-2020/edit/master/content", content_dir = "", repo_branch = "master", editable = {docs = true, page = true, post = false}}
 
 ############################
 ## Contact details
