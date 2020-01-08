@@ -22,9 +22,11 @@ Coffee break between 10:30 - 11:00.
 
 #### > 00 - [Welcome]()
 
+`r emo::ji("wave")` Welcome  
+`r emo::ji("dice")` The Whole Game  
+
 #### > 01 - [Setup packages]()
 
-`r emo::ji("dice")` The Whole Game  
 `r emo::ji("package")` Creating new packages  
 `r emo::ji("megaphone")` The DESCRIPTION file
 

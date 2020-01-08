@@ -1,7 +1,7 @@
 ---
 title: Agenda
 author: ''
-date: "2020-01-06"
+date: "2020-01-08"
 slug: workshop
 categories: []
 tags: []
@@ -22,9 +22,11 @@ Coffee break between 10:30 - 11:00.
 
 #### > 00 - [Welcome]()
 
+👋 Welcome  
+🎲 The Whole Game  
+
 #### > 01 - [Setup packages]()
 
-🎲 The Whole Game  
 📦 Creating new packages  
 📣 The DESCRIPTION file
 
@@ -36,8 +38,8 @@ Coffee break between 10:30 - 11:00.
 
 #### > 03 - [Document]()
 
-📃Use roxygen2 to document your code  
-🆘Create help files  
+📄Use roxygen2 to document your code  
+💁Create help files  
 🚢 Export functions.
 
 
@@ -58,7 +60,7 @@ Coffee break between 15:00 - 15:30.
 
 #### > 06 - [Add data and files]()
 
-🗄 Leverage the R package structure to store data, R Markdown templates, scripts, and other types of files.
+📂 Leverage the R package structure to store data, R Markdown templates, scripts, and other types of files.
 
 #### > 07 - Wrap up
 
