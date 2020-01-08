@@ -13,7 +13,7 @@ feature:
   icon: file-alt
   icon_pack: fas
   name: Document
-- description: Test your code with [testthat](https://testthat.r-lib.org/), [devtools](https://devtools.r-lib.org/), and and R CMD check.
+- description: Test your code with [testthat](https://testthat.r-lib.org/), [devtools](https://devtools.r-lib.org/), and R CMD check.
   icon: road
   icon_pack: fas
   name: Test
