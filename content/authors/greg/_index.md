@@ -7,17 +7,14 @@ name: Greg Lin
 organizations:
 - name: RStudio
   url: ""
-role: ""
+role: "Software Engineer"
 social:
 - icon: envelope
   icon_pack: fas
-  link: 'mailto:malcolmbarrett@gmail.com'
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/malco_barrett
+  link: 'mailto:greg.lin@rstudio.com'
 - icon: github
   icon_pack: fab
-  link: https://github.com/malcolmbarrett
+  link: https://github.com/glin
 superuser: false
 user_groups:
 - Teaching Assistants
