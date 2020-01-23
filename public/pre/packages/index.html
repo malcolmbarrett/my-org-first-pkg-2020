@@ -29,8 +29,8 @@
     
   
   <meta name="description" content="You can download all the R packages we will need as well as download the course materials using the course R package, which you can install from GitHub using the remotes package.
-# if needed: # install.packages(&quot;remotes&quot;) remotes::install_github(&quot;malcolmbarrett/org.first.r.pkg&quot;) org.first.r.pkg::install_workshop(&quot;path/to/download/materials&quot;)  Installing the workshop materials will open an RStudio project containing all the materials we&#39;ll use.
-If you prefer to work with the materials via git, you can just install course package without running install_workshop().">
+# if needed: # install.packages(&quot;remotes&quot;) remotes::install_github(&quot;malcolmbarrett/firstrpkg&quot;)  The installation of RMariaDB, which we&#39;ll use on day 2, requires the installation of system libraries. The names of the libraries and their method of installation depend on the system:
+Debian or Ubuntu sudo apt-get install -y libmysqlclient-dev sudo apt-get install -y libmariadb-client-lgpl-dev">
 
   
   <link rel="alternate" hreflang="en-us" href="/pre/packages/">
@@ -234,14 +234,14 @@ If you prefer to work with the materials via git, you can just install course pa
   <meta property="og:url" content="/pre/packages/">
   <meta property="og:title" content="Install R packages | My Organization&#39;s First R Package Workshop">
   <meta property="og:description" content="You can download all the R packages we will need as well as download the course materials using the course R package, which you can install from GitHub using the remotes package.
-# if needed: # install.packages(&quot;remotes&quot;) remotes::install_github(&quot;malcolmbarrett/org.first.r.pkg&quot;) org.first.r.pkg::install_workshop(&quot;path/to/download/materials&quot;)  Installing the workshop materials will open an RStudio project containing all the materials we&#39;ll use.
-If you prefer to work with the materials via git, you can just install course package without running install_workshop()."><meta property="og:image" content="/images/icon_huf4e41134b020a8cfba31585f0a8733f1_3059_512x512_fill_lanczos_center_2.png">
+# if needed: # install.packages(&quot;remotes&quot;) remotes::install_github(&quot;malcolmbarrett/firstrpkg&quot;)  The installation of RMariaDB, which we&#39;ll use on day 2, requires the installation of system libraries. The names of the libraries and their method of installation depend on the system:
+Debian or Ubuntu sudo apt-get install -y libmysqlclient-dev sudo apt-get install -y libmariadb-client-lgpl-dev"><meta property="og:image" content="/images/icon_huf4e41134b020a8cfba31585f0a8733f1_3059_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="/images/icon_huf4e41134b020a8cfba31585f0a8733f1_3059_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2020-01-06T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2020-01-23T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-01-06T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2020-01-23T00:00:00&#43;00:00">
   
 
   
@@ -394,28 +394,6 @@ If you prefer to work with the materials via git, you can just install course pa
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/materials/"><span>Materials and Slides</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-
-        <li class="nav-item">
           <a class="nav-link " href="/post/"><span>Post-Workshop</span></a>
         </li>
 
@@ -439,6 +417,30 @@ If you prefer to work with the materials via git, you can just install course pa
 
         <li class="nav-item">
           <a class="nav-link " href="/instructors/"><span>Instructors</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://bit.ly/my-org-first-r-pkg" target="_blank" rel="noopener"><i class="fas fa-cloud fa-lg"></i><span>  RStudio Cloud </span></a>
         </li>
 
         
@@ -530,11 +532,6 @@ If you prefer to work with the materials via git, you can just install course pa
   </div>
   
   <div class="docs-toc-item">
-    <a class="docs-toc-link" href="/pre/cloud/">Cloud setup</a>
-
-  </div>
-  
-  <div class="docs-toc-item">
     <a class="docs-toc-link" href="/pre/local/">Local setup</a>
     <ul class="nav docs-sidenav">
       
@@ -556,6 +553,11 @@ If you prefer to work with the materials via git, you can just install course pa
   </div>
   
   <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/pre/cloud/">Cloud setup</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
     <a class="docs-toc-link" href="/pre/reading/">Resources</a>
 
   </div>
@@ -571,7 +573,18 @@ If you prefer to work with the materials via git, you can just install course pa
         <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
       </ul>
 
-      <nav id="TableOfContents"></nav>
+      <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#debian-or-ubuntu">Debian or Ubuntu</a></li>
+        <li><a href="#fedora-centos-or-rhel">Fedora, CentOS, or RHEL</a></li>
+        <li><a href="#mac-homebrew">Mac (Homebrew)</a></li>
+      </ul>
+    </li>
+    <li><a href="#download-the-course-materials">Download the course materials</a></li>
+  </ul>
+</nav>
 
       
     </div>
@@ -588,11 +601,24 @@ If you prefer to work with the materials via git, you can just install course pa
             <p>You can download all the R packages we will need as well as download the course materials using the course R package, which you can install from GitHub using the remotes package.</p>
 <pre><code class="language-r"># if needed:
 # install.packages(&quot;remotes&quot;)
-
-remotes::install_github(&quot;malcolmbarrett/org.first.r.pkg&quot;)
-org.first.r.pkg::install_workshop(&quot;path/to/download/materials&quot;)
+remotes::install_github(&quot;malcolmbarrett/firstrpkg&quot;)
 </code></pre>
-<p>Installing the workshop materials will open an RStudio project containing all the materials we'll use.</p>
+<p>The installation of <strong>RMariaDB</strong>, which we'll use on day 2, requires the installation of system libraries. The names of the libraries and their method of installation depend on the system:</p>
+<h3 id="debian-or-ubuntu">Debian or Ubuntu</h3>
+<p><code>sudo apt-get install -y libmysqlclient-dev</code>
+<code>sudo apt-get install -y libmariadb-client-lgpl-dev</code></p>
+<h3 id="fedora-centos-or-rhel">Fedora, CentOS, or RHEL</h3>
+<p><code>sudo yum install mysql-devel</code>
+<code>sudo yum install mariadb-devel</code></p>
+<h3 id="mac-homebrew">Mac (Homebrew)</h3>
+<p><code>brew install mysql-connector-c++</code>
+<code>brew install mariadb-connector-c</code></p>
+<h2 id="download-the-course-materials">Download the course materials</h2>
+<p>Once you've installed the package and RMariaDB, download the workshop materials with</p>
+<pre><code class="language-r">firstrpkg::install_workshop(&quot;path/to/your/computer&quot;)
+</code></pre>
+<p>Replace &ldquo;path/to/your/computer&rdquo; with where on your computer you want the workshop installed.</p>
+<p><strong>Note that the download size of the workshop materials is around 200 MB and may take some time.</strong></p>
 <p>If you prefer to work with the materials via git, you can just install course package without running <code>install_workshop()</code>. You can find the materials on the <a href="https://github.com/rstudio-conf-2020/my-org-first-pkg">course GitHub repository</a>.</p>
 
           </div>
@@ -617,7 +643,7 @@ org.first.r.pkg::install_workshop(&quot;path/to/download/materials&quot;)
   
   <div class="post-nav-item">
     <div class="meta-nav">Next</div>
-    <a href="/pre/system/" rel="prev">Install/upgrade software</a>
+    <a href="/pre/local/" rel="prev">Local setup</a>
   </div>
   
 </div>
@@ -627,7 +653,7 @@ org.first.r.pkg::install_workshop(&quot;path/to/download/materials&quot;)
         </div>
 
         <div class="body-footer">
-          <p>Last updated on Jan 6, 2020</p>
+          <p>Last updated on Jan 23, 2020</p>
 
           
 

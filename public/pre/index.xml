@@ -5,7 +5,7 @@
     <link>/pre/</link>
       <atom:link href="/pre/index.xml" rel="self" type="application/rss+xml" />
     <description>Welcome</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Wed, 08 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Thu, 23 Jan 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_huf4e41134b020a8cfba31585f0a8733f1_3059_512x512_fill_lanczos_center_2.png</url>
       <title>Welcome</title>
@@ -15,13 +15,14 @@
     <item>
       <title>Cloud setup</title>
       <link>/pre/cloud/</link>
-      <pubDate>Mon, 06 Jan 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
       <guid>/pre/cloud/</guid>
       <description>&lt;h2 id=&#34;work-in-the-&#34;&gt;Work in the ☁&lt;/h2&gt;
 &lt;p&gt;For this option, you will:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Work&lt;/strong&gt; in a pre-configured, web-based RStudio IDE instance provided by &lt;a href=&#34;http://rstudio.cloud&#34;&gt;RStudio Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Work&lt;/strong&gt; in a pre-configured, web-based RStudio IDE instance provided by &lt;a href=&#34;http://rstudio.cloud&#34;&gt;RStudio Cloud&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;You can join the workspace for the workshop at &lt;a href=&#34;https://bit.ly/my-org-first-r-pkg&#34;&gt;https://bit.ly/my-org-first-r-pkg&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;why-would-i-choose-this-option&#34;&gt;Why would I choose this option?&lt;/h2&gt;
 &lt;p&gt;You just want this course to work without worrying about preparation on your local computer. You may not have time to do all the &lt;a href=&#34;../local&#34;&gt;local setup&lt;/a&gt;, or you may not wish to modify your local install to upgrade right now.&lt;/p&gt;
 &lt;h2 id=&#34;what-do-i-need-to-do-before-the-workshop&#34;&gt;What do I need to do before the workshop?&lt;/h2&gt;
@@ -40,17 +41,53 @@
     <item>
       <title>Install R packages</title>
       <link>/pre/packages/</link>
-      <pubDate>Mon, 06 Jan 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
       <guid>/pre/packages/</guid>
       <description>&lt;p&gt;You can download all the R packages we will need as well as download the course materials using the course R package, which you can install from GitHub using the remotes package.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# if needed:
 # install.packages(&amp;quot;remotes&amp;quot;)
-
-remotes::install_github(&amp;quot;malcolmbarrett/org.first.r.pkg&amp;quot;)
-org.first.r.pkg::install_workshop(&amp;quot;path/to/download/materials&amp;quot;)
+remotes::install_github(&amp;quot;malcolmbarrett/firstrpkg&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Installing the workshop materials will open an RStudio project containing all the materials we&#39;ll use.&lt;/p&gt;
+&lt;p&gt;The installation of &lt;strong&gt;RMariaDB&lt;/strong&gt;, which we&#39;ll use on day 2, requires the installation of system libraries. The names of the libraries and their method of installation depend on the system:&lt;/p&gt;
+&lt;h3 id=&#34;debian-or-ubuntu&#34;&gt;Debian or Ubuntu&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;sudo apt-get install -y libmysqlclient-dev&lt;/code&gt;
+&lt;code&gt;sudo apt-get install -y libmariadb-client-lgpl-dev&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;fedora-centos-or-rhel&#34;&gt;Fedora, CentOS, or RHEL&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;sudo yum install mysql-devel&lt;/code&gt;
+&lt;code&gt;sudo yum install mariadb-devel&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;mac-homebrew&#34;&gt;Mac (Homebrew)&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;brew install mysql-connector-c++&lt;/code&gt;
+&lt;code&gt;brew install mariadb-connector-c&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;download-the-course-materials&#34;&gt;Download the course materials&lt;/h2&gt;
+&lt;p&gt;Once you&#39;ve installed the package and RMariaDB, download the workshop materials with&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;firstrpkg::install_workshop(&amp;quot;path/to/your/computer&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Replace &amp;ldquo;path/to/your/computer&amp;rdquo; with where on your computer you want the workshop installed.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note that the download size of the workshop materials is around 200 MB and may take some time.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;If you prefer to work with the materials via git, you can just install course package without running &lt;code&gt;install_workshop()&lt;/code&gt;. You can find the materials on the &lt;a href=&#34;https://github.com/rstudio-conf-2020/my-org-first-pkg&#34;&gt;course GitHub repository&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Local setup</title>
+      <link>/pre/local/</link>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/pre/local/</guid>
+      <description>&lt;h2 id=&#34;work-on-your-own-&#34;&gt;Work on your own 💻&lt;/h2&gt;
+&lt;p&gt;For this option, you will:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Build&lt;/strong&gt; your R packages locally on your laptop using the RStudio IDE&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This option will require more setup time before the workshop, but will allow you to be able to work from your local setup using R and the RStudio IDE.&lt;/p&gt;
+&lt;h2 id=&#34;why-would-i-choose-this-option&#34;&gt;Why would I choose this option?&lt;/h2&gt;
+&lt;p&gt;You may not want to do your work on the cloud, and would strongly prefer to use your own machine. Note that while we will have a TA for this workshop, there is a limit to how much we can help with issues arising from running outdated versions of R, the RStudio IDE, or packages. So, if you choose this option, please carefully follow all the setup instructions listed below. If you run into problems with your local setup, we may ask you to switch to a &lt;a href=&#34;../cloud&#34;&gt;cloud setup&lt;/a&gt; during the workshop so that you can enjoy the workshop and get the most out of it.&lt;/p&gt;
+&lt;h2 id=&#34;what-do-i-need-to-do-before-the-workshop&#34;&gt;What do I need to do before the workshop?&lt;/h2&gt;
+&lt;p&gt;You&#39;ll need to follow these setup instructions:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;../system/&#34;&gt;Install/upgrade software&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../packages/&#34;&gt;Install R packages and Course Materials&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../github&#34;&gt;Install Git &amp;amp; GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
 </description>
     </item>
     
@@ -81,29 +118,6 @@ org.first.r.pkg::install_workshop(&amp;quot;path/to/download/materials&amp;quot;
 &lt;li&gt;See &lt;a href=&#34;https://whattheyforgot.org/maintaining-r.html#how-to-transfer-your-library-when-updating-r&#34;&gt;&amp;ldquo;How to transfer your library when updating R&amp;rdquo;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ol&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Local setup</title>
-      <link>/pre/local/</link>
-      <pubDate>Mon, 06 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>/pre/local/</guid>
-      <description>&lt;h2 id=&#34;work-on-your-own-&#34;&gt;Work on your own 💻&lt;/h2&gt;
-&lt;p&gt;For this option, you will:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Build&lt;/strong&gt; your R packages locally on your laptop using the RStudio IDE&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This option will require more setup time before the workshop, but will allow you to be able to work from your local setup using R and the RStudio IDE.&lt;/p&gt;
-&lt;h2 id=&#34;why-would-i-choose-this-option&#34;&gt;Why would I choose this option?&lt;/h2&gt;
-&lt;p&gt;You may not want to do your work on the cloud, and would strongly prefer to use your own machine. Note that while we will have a TA for this workshop, there is a limit to how much we can help with issues arising from running outdated versions of R, the RStudio IDE, or packages. So, if you choose this option, please carefully follow all the setup instructions listed below. If you run into problems with your local setup, we may ask you to switch to a &lt;a href=&#34;../cloud&#34;&gt;cloud setup&lt;/a&gt; during the workshop so that you can enjoy the workshop and get the most out of it.&lt;/p&gt;
-&lt;h2 id=&#34;what-do-i-need-to-do-before-the-workshop&#34;&gt;What do I need to do before the workshop?&lt;/h2&gt;
-&lt;p&gt;You&#39;ll need to follow these setup instructions:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;../system/&#34;&gt;Install/upgrade software&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../packages/&#34;&gt;Install R packages and Course Materials&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../github&#34;&gt;Install Git &amp;amp; GitHub&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </description>
     </item>

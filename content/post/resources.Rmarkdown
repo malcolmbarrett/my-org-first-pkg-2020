@@ -1,0 +1,32 @@
+---
+title: Resources
+author: ''
+date: "`r Sys.Date()`"
+slug: reading
+categories: []
+tags: []
+linktitle: "Resources"
+menu:
+  post:
+    name: "Resources"
+    weight: 7
+toc: yes
+type: docs
+---
+
+The best resources on your journey of developing R packages are, of course, the two editions of R Packages:
+
+- [R Packages, ed 1](http://r-pkgs.had.co.nz/)
+- [R Packages, ed 2](https://r-pkgs.org/)
+
+If you're submitting to CRAN, you'll also want to keep a few extra resources handy:
+
+- [Writing R Extensions](https://colinfay.me/writing-r-extensions)
+- [Preparing your package for a CRAN submission Checklist](https://github.com/ThinkR-open/prepare-for-cran)
+
+For generally improving your code writing and debugging skills, we recommend:
+
+- [Advanced R, ed. 2](https://adv-r.hadley.nz/)
+- [What They Forgot to Teach You About R](https://rstats.wtf/)
+- [Code Smells and Feels](https://github.com/jennybc/code-smells-and-feels)
+- [The Tidyverse Styleguide](https://style.tidyverse.org/)

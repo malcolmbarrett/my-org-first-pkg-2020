@@ -1,7 +1,7 @@
 ---
 title: Au revoir!
 author: ''
-date: "2020-01-06"
+date: "2020-01-23"
 slug: postworkshop
 categories: []
 tags: []
@@ -17,3 +17,4 @@ type: docs
 
 - Feel free to post any issues on the [workshop repo](https://github.com/rstudio-conf-2020/my-org-first-pkg) or contact us about any questions or comments regarding the workshop.
 - And please fill out the post-workshop survey you received in your email.
+- Finally, check out the [resources](reading/) we recommend to learn more about R Packages and improving your code

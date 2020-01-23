@@ -5,7 +5,7 @@
 
 [[main]]
   name = "Pre-Workshop"
-  url = "pre/" 
+  url = "pre/"
   weight = 1
 
 [[main]]
@@ -14,25 +14,27 @@
   weight = 2
 
 [[main]]
-  name = "Materials and Slides"
-  url = "materials/"
+  name = "Post-Workshop"
+  url = "post/"
   weight = 4
 
 [[main]]
-  name = "Post-Workshop"
-  url = "post/"
-  weight = 5
-  
-[[main]]
   name = "Instructors"
   url = "instructors/"
+  weight = 5
+
+[[main]]
+  pre = "<i class=\"fas fa-cloud fa-lg\"></i>"
+  name = "  RStudio Cloud "
+  url = "https://bit.ly/my-org-first-r-pkg"
   weight = 6
-  
+
 [[main]]
   pre = "<i class=\"fab fa-github fa-lg\"></i>"
   name = ""
   url = "https://github.com/rstudio-conf-2020/my-org-first-pkg"
   weight = 7
+
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
