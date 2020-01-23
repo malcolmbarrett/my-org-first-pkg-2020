@@ -38,7 +38,7 @@ Coffee break between 10:30 - 11:00.
 
 #### > 03 - Document
 
-📜Use roxygen2 to document your code  
+📃Use roxygen2 to document your code  
 🆘Create help files  
 🚢 Export functions.
 
@@ -52,7 +52,7 @@ Coffee break between 15:00 - 15:30.
 
 #### > 04 - Test
 
-🔬 Test your code with testthat, devtools, and and R CMD check.
+🧪 Test your code with testthat, devtools, and and R CMD check.
 
 #### > 05 - Teach
 
@@ -60,7 +60,7 @@ Coffee break between 15:00 - 15:30.
 
 #### > 06 - Add data and files
 
-📁 Leverage the R package structure to store data, R Markdown templates, scripts, and other types of files.
+📂 Leverage the R package structure to store data, R Markdown templates, scripts, and other types of files.
 
 #### > 07 - Wrap up
 
