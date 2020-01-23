@@ -5,12 +5,37 @@
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Au revoir!</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Mon, 06 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Thu, 23 Jan 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_huf4e41134b020a8cfba31585f0a8733f1_3059_512x512_fill_lanczos_center_2.png</url>
       <title>Au revoir!</title>
       <link>/post/</link>
     </image>
+    
+    <item>
+      <title>Resources</title>
+      <link>/post/reading/</link>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/post/reading/</guid>
+      <description>&lt;p&gt;The best resources on your journey of developing R packages are, of course, the two editions of R Packages:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://r-pkgs.had.co.nz/&#34;&gt;R Packages, ed 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://r-pkgs.org/&#34;&gt;R Packages, ed 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you&#39;re submitting to CRAN, you&#39;ll also want to keep a few extra resources handy:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://colinfay.me/writing-r-extensions&#34;&gt;Writing R Extensions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ThinkR-open/prepare-for-cran&#34;&gt;Preparing your package for a CRAN submission Checklist&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For generally improving your code writing and debugging skills, we recommend:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://adv-r.hadley.nz/&#34;&gt;Advanced R, ed. 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rstats.wtf/&#34;&gt;What They Forgot to Teach You About R&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jennybc/code-smells-and-feels&#34;&gt;Code Smells and Feels&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://style.tidyverse.org/&#34;&gt;The Tidyverse Styleguide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
   </channel>
 </rss>

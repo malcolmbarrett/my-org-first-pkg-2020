@@ -1,7 +1,7 @@
 ---
 title: Local setup
 author: ''
-date: "2020-01-06"
+date: "2020-01-23"
 slug: local
 categories: []
 tags: []
@@ -9,7 +9,7 @@ linktitle: "Local setup"
 menu:
   pre:
     name: "Local setup"
-    weight: 4
+    weight: 3
 toc: yes
 type: docs
 ---

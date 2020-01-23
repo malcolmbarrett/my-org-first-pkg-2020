@@ -1,7 +1,7 @@
 ---
 title: Cloud setup
 author: ''
-date: "2020-01-06"
+date: "2020-01-23"
 slug: cloud
 categories: []
 tags: []
@@ -9,7 +9,7 @@ linktitle: "Cloud setup"
 menu:
   pre:
     name: "Cloud setup"
-    weight: 3
+    weight: 4
 toc: yes
 type: docs
 ---
@@ -18,7 +18,9 @@ type: docs
 
 For this option, you will:
 
-- **Work** in a pre-configured, web-based RStudio IDE instance provided by [RStudio Cloud](http://rstudio.cloud)
+- **Work** in a pre-configured, web-based RStudio IDE instance provided by [RStudio Cloud](http://rstudio.cloud). 
+
+You can join the workspace for the workshop at [https://bit.ly/my-org-first-r-pkg](https://bit.ly/my-org-first-r-pkg).
 
 ## Why would I choose this option?
 
