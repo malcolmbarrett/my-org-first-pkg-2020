@@ -50,13 +50,13 @@ remotes::install_github(&amp;quot;malcolmbarrett/firstrpkg&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The installation of &lt;strong&gt;RMariaDB&lt;/strong&gt;, which we&#39;ll use on day 2, requires the installation of system libraries. The names of the libraries and their method of installation depend on the system:&lt;/p&gt;
 &lt;h3 id=&#34;debian-or-ubuntu&#34;&gt;Debian or Ubuntu&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;sudo apt-get install -y libmysqlclient-dev&lt;/code&gt;
+&lt;p&gt;&lt;code&gt;sudo apt-get install -y libmysqlclient-dev&lt;/code&gt;&lt;br&gt;
 &lt;code&gt;sudo apt-get install -y libmariadb-client-lgpl-dev&lt;/code&gt;&lt;/p&gt;
 &lt;h3 id=&#34;fedora-centos-or-rhel&#34;&gt;Fedora, CentOS, or RHEL&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;sudo yum install mysql-devel&lt;/code&gt;
+&lt;p&gt;&lt;code&gt;sudo yum install mysql-devel&lt;/code&gt;&lt;br&gt;
 &lt;code&gt;sudo yum install mariadb-devel&lt;/code&gt;&lt;/p&gt;
 &lt;h3 id=&#34;mac-homebrew&#34;&gt;Mac (Homebrew)&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;brew install mysql-connector-c++&lt;/code&gt;
+&lt;p&gt;&lt;code&gt;brew install mysql-connector-c++&lt;/code&gt;&lt;br&gt;
 &lt;code&gt;brew install mariadb-connector-c&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;download-the-course-materials&#34;&gt;Download the course materials&lt;/h2&gt;
 &lt;p&gt;Once you&#39;ve installed the package and RMariaDB, download the workshop materials with&lt;/p&gt;
