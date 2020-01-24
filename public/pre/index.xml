@@ -58,7 +58,7 @@ remotes::install_github(&amp;quot;malcolmbarrett/firstrpkg&amp;quot;)
 &lt;h3 id=&#34;mac-homebrew&#34;&gt;Mac (Homebrew)&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;brew install mysql-connector-c++&lt;/code&gt;&lt;br&gt;
 &lt;code&gt;brew install mariadb-connector-c&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&#34;download-the-course-materials&#34;&gt;Download the course materials&lt;/h2&gt;
+&lt;h1 id=&#34;download-the-course-materials&#34;&gt;Download the course materials&lt;/h1&gt;
 &lt;p&gt;Once you&#39;ve installed the package and RMariaDB, download the workshop materials with&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;firstrpkg::install_workshop(&amp;quot;path/to/your/computer&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
